@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" preserve-order="true">
+
+    <!--<parameter name="baseUrl" value=""/>-->
+    <parameter name="remote" value="false"/>
+    <parameter name="reTry" value="1"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="gridUrl" value=""/>
+    <parameter name="env" value=""/>
+
+    <test name="Smoke Test">
+        <classes>
+            <class name="backend.testclass.ThuisBackEndTest"></class>
+        </classes>
+    </test>
+
+    <test name="Functional Test">
+        <classes>
+            <class name="frontend.testclass.ThuisBezorgdAddressTest"></class>
+        </classes>
+    </test>
+</suite>
